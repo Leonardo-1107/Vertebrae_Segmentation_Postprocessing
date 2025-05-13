@@ -8,6 +8,21 @@ The main script also supports **parallel execution** to speed up the refinement 
 ---
 
 ## Folder Structure
+```bash
+.
+├── AbdomenAtlasDemoPredict/    # Input Folder 
+│   └── BDMAP_000000031
+│           ├── segmentations
+│           │         └── ...
+│           └── detector_model.py
+├── Refined/                    # Output Folder
+│   └── BDMAP_000000031
+│           ├── segmentations
+│           │         └── ...
+│           └── detector_model.py
+│  # Main
+└── postprocessing_vertebrae.py              
+```
 
 - **Input Folder**: `AbdomenAtlasDemoPredict/`
   - Contains subfolders for each case
